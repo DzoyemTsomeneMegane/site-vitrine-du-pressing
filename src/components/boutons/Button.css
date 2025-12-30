@@ -1,0 +1,39 @@
+.btn {
+  background-color: #72a0c1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5d81a8;
+  transform: translateY(-2px);
+}
+
+/* Ancien code */
+/*
+.btn {
+  background-color: #72a0c1;
+  ...
+}
+.btn:hover {
+  background-color: #5d81a8;
+  ...
+}
+*/
+
+/* Nouveau code avec variables */
+/* .btn {
+  background-color: var(--primary-color);
+  color: white;
+  /* ... 
+}
+.btn:hover {
+  background-color: var(--secondary-color);
+  
+} */

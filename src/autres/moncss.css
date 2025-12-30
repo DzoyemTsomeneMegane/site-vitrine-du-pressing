@@ -1,0 +1,7 @@
+
+.MonBouton{
+    margin: 10px;
+}
+.MonBouton:hover{
+    opacity: 0.5;
+}

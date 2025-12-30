@@ -1,0 +1,35 @@
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.footer a {
+  color: #A1E9D7;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer-contact {
+  margin-top: 15px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+/* Responsivité du Footer */
+@media (max-width: 600px) {
+  .footer-contact a {
+    display: block;
+    margin: 5px 0;
+  }
+}

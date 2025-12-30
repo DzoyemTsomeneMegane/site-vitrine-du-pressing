@@ -1,0 +1,104 @@
+.how-it-works-section {
+  padding: 80px 20px;
+  background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1));
+   /* #f8f9fa; */
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.step-card {
+  max-width: 250px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Ajout de border-color à la transition */
+}
+
+.step-image-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: #fff solid 4px;
+}
+
+.step-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.step-number {
+  /* Positionnement corrigé pour être sur la bordure */
+  position: absolute;
+  top: 100px; /* Déplace le cercle de 15px vers le haut */
+  right: 50px; /* J'ai ajusté la position pour qu'il soit à l'exterieur */
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1rem;
+  /* border: 4px solid white; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Assure que le chiffre est au-dessus de l'image */
+}
+
+.step-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.step-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+.step-card:hover {
+  transform: scale(1.09);
+  
+}
+
+/* Responsivité pour la section "Comment ça marche" */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .steps-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .step-card {
+    max-width: 100%;
+  }
+  .step-number {
+    right: 240px;
+    top: 100px; /* Déplace le cercle de 15px vers le haut */
+  }
+}
